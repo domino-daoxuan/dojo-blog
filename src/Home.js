@@ -13,6 +13,7 @@ const Home = () => {
         <div className="home">
             {/* this is props == child component */}
           <BlogList blogs={blogs} title="All Blogs!" /> 
+          <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title="Mario's Blog" />
         </div>
      );
 }
